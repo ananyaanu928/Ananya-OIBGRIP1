@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,400;0,500;0,700;1,500&family=Satisfy&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.firstpage{
+    height: 100vh;
+}
+
+.pizzalogo{
+    justify-content: center;
+    width:25%;
+    display: flex;
+    align-items: center;
+}
+.pizzalogo img{
+    width: 15%;
+    border-radius: 50px;
+    margin: 4px;
+}
+.navbar {
+    height:80px;
+    position: sticky;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    top:0;
+    background:black;
+    padding:0px 10px 0px 20px;
+}
+.navbar ul{
+    display:flex;
+    list-style: none;
+}
+.navbar ul li{
+    margin:0 30px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    font-size:18px;
+    font-weight: 500;
+    letter-spacing:1px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    
+    
+}
+
+.navbar ul li a:hover{ 
+    color:grey;
+  
+}
+.menu-btn i{
+    color: white;
+    display:none;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('sidepizza.png');
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.button{
+    text-align: center;
+    padding-top: 10px;
+}
+.buttn{
+    margin: 10px 5px;
+    padding: 8px 20px;
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+}
+.button :hover{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    border-color: grey;
+    font-size: 18px;
+    display: inline-block;
+    background: #fff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 8px 25px;
+    font-weight: 450;
+    color: #111;
+    transition: 0.2s;
+}
+
+.contentfirst{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    height: 75%;
+    max-width: 70%;
+    margin: auto;
+}
+
+.written{
+    margin-top: 150px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0%;
+}
+
+.firsttexth{
+    font-size: 45px;
+    text-align: center;
+}
+
+.firsttextp{
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+}
+
+#click{
+    display:none;
+}
+ @media (max-width: 1080px){
+
+    #click{
+        display:none;
+    }
+      
+    .menu-btn i {
+        color: white;
+        display:block;
+    }
+     
+    #click:checked ~ .menu-btn i:before {
+     content: "\f00d";
+    }
+    
+    .firsttextp {
+        text-align: center;
+    }
+    .button{
+        text-align: center;
+    }
+
+    .navbar ul  {
+     position: fixed;
+     display:block;
+     align-items: center;
+     top:80px;
+     left:-100%;
+     width:100%;
+     height:100vh;
+     background:#111 ;
+    }
+
+    .navbar ul li {
+        margin: 30px 0;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+}
+
+
